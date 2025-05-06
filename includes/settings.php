@@ -1,3 +1,4 @@
+
 <?php
 $sql = "SELECT * FROM users WHERE user_id=:user_id limit 1 ";
 $id = $_SESSION['userid'];
