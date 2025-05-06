@@ -21,7 +21,7 @@
                 <br>
                 <br>
                 <br>
-                <div>
+                 <div>  
                     <label id="label_chat" for="radio_chat">Chat <img src="ui/icons/chat.png" alt="" srcset=""></label>
                     <label id="label_contact" for="radio_contact">Contact <img src="ui/icons/contacts.png" alt="" srcset=""></label>
                     <label id="label_setting" for="radio_setting">Setting <img src="ui/icons/settings.png" alt="" srcset=""></label>
