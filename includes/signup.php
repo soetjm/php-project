@@ -1,9 +1,12 @@
+
+
 <?php
 $info = (object)[];
 $data = false;
 $data['user_id'] = $DB->generate_id(20);
 $data['date'] = date("Y-m-d H:i:s");
 $data['username'] = $DATA_OBJ->username;
+
 
 if (empty($DATA_OBJ->username)) {
     $Error .= "Please Enter Valid UserName.<br>";
@@ -12,13 +15,17 @@ if (empty($DATA_OBJ->username)) {
 
         $Error .= "username must be at lest 3 character.<br>";
     }
-
+ 
+    
     if (!preg_match("/^[a-z A-Z]*$/", $DATA_OBJ->username)) {
         $Error .= "Please Enter Valid UserName.<br>";
     }
 }
 
 $data['email'] = $DATA_OBJ->email;
+
+
+
 
 if (empty($DATA_OBJ->email)) {
     $Error .= "Please Enter Valid email.<br>";
