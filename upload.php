@@ -43,6 +43,10 @@ if (isset($_FILES['file']) && $_FILES['file']['name'] != "") {
 }
 
 
+
+
+
+
 if ($data_type == "change_profile_image") {
     if ($distination != "") {
         //save to the database
@@ -50,7 +54,11 @@ if ($data_type == "change_profile_image") {
         $quary = "UPDATE users set image = '$distination' WHERE user_id =  '$id' limit 1";
         $DB->write($quary, []);
     }
-} else if ($data_type == "send_image") {
+
+
+
+    
+}else if ($data_type == "send_image") {
     $arr['userid'] = "null";
     if (isset($_POST['userid'])) {
         $arr['userid'] = addslashes($_POST['userid']);
@@ -61,10 +69,19 @@ if ($data_type == "change_profile_image") {
     $arr['msgid'] = get_random_string_max(60);
     $arr['file'] = $distination;
 
+    
+
+
+
+
+
     $arr2['sender'] = $_SESSION['userid'];
     $arr2['receiver'] = $arr['userid'];
     $sql = "SELECT * FROM messages where (sender = :sender && receiver = :receiver) || (receiver = :sender && sender = :receiver) limit 1";
     $result2 = $DB->read($sql, $arr2);
+
+ 
+
 
     if (is_array($result2)) {
         $arr['msgid'] = $result2[0]->msgid;
