@@ -1,0 +1,70 @@
+@font-face {
+    font-family: headFont;
+    src: url('ui/fonts/Summer-Vibes-OTF.otf')
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('ui/fonts/OpenSans-Regular.ttf')
+}
+
+#wrapper {
+    max-width: 900px;
+    min-height: 500px;
+    /* display: flex; */
+    margin: auto;
+    color: gray;
+    font-family: myFont;
+    font-size: 13px;
+}
+
+form {
+    margin: auto;
+    /* background-color: black; */
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type=text],
+[type=password],
+input[type=button],
+input[type=email] {
+    padding: 10px;
+    margin: 10px;
+    width: 98%;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+input[type=button] {
+    width: 103%;
+    cursor: pointer;
+    background-color: #2b5488;
+    color: white;
+}
+
+input[type=radio] {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#header {
+    background-color: #485b6c;
+    /* height: 70px; */
+    font-size: 40px;
+    text-align: center;
+    font-family: headFont;
+    width: 100%;
+    color: white;
+}
+
+#error {
+    text-align: center;
+    padding: 0.5em;
+    background-color: #ecaf91;
+    color: #fff;
+    max-width: 400px;
+    margin: auto;
+    display: none;
+}
