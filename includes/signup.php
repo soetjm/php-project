@@ -12,7 +12,8 @@ if (empty($DATA_OBJ->username)) {
 
         $Error .= "username must be at lest 3 character.<br>";
     }
-
+ 
+    
     if (!preg_match("/^[a-z A-Z]*$/", $DATA_OBJ->username)) {
         $Error .= "Please Enter Valid UserName.<br>";
     }
