@@ -8,16 +8,19 @@ $result = $DB->read($sql, $arr);
 
 if (is_array($result)) {
     //user found
+
     $arr['message'] = $DATA_OBJ->find->message;
     $arr['date'] = date('Y-m-d H:i:s');
     $arr['sender'] = $_SESSION['userid'];
     $arr['msgid'] = get_random_string_max(60);
+
 
     $arr2['sender'] = $_SESSION['userid'];
     $arr2['receiver'] = $arr['userid'];
     $sql = "SELECT * FROM messages where (sender = :sender && receiver = :receiver) || (receiver = :sender && sender = :receiver) limit 1";
     $result2 = $DB->read($sql, $arr2);
 
+    
     if (is_array($result2)) {
         $arr['msgid'] = $result2[0]->msgid;
     }
