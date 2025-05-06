@@ -7,9 +7,10 @@
     <title>My Chat</title>
     <link rel="stylesheet" href="ui/css/index.css">
 </head>
-
+ 
 <body>
     <div id="wrapper">
+        
         <div id="left_pannel">
             <div id="user_info" style="padding: 10px;">
                 <img id="profile_image" src="ui/images/male.jpg" alt="" srcset="" style="height:100px;width:100px;">
