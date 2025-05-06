@@ -11,7 +11,7 @@
 <body>
     <div id="wrapper">
         <div id="header">
-            My Chat
+              My Chat
             <div style="font-size: 20px;">Login</div>
         </div>
         <div id="error">some text</div>
