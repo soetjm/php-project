@@ -9,13 +9,14 @@
 }
 
 #wrapper {
-    max-width: 900px;
+    font-size: 13px;
     min-height: 500px;
     /* display: flex; */
     margin: auto;
     color: gray;
     font-family: myFont;
-    font-size: 13px;
+    max-width: 900px;
+    
 }
 
 form {
