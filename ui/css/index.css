@@ -9,8 +9,9 @@
 }
 
 #wrapper {
-    max-width: 900px;
+    
     max-height: 630px;
+    max-width: 900px;
     display: flex;
     margin: auto;
     color: white;

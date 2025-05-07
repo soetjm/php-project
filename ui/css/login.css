@@ -9,10 +9,14 @@
 }
 
 #wrapper {
-    max-width: 900px;
     min-height: 500px;
+    max-width: 900px;
+  
     /* display: flex; */
     margin: auto;
+
+
+
     color: gray;
     font-family: myFont;
     font-size: 13px;
