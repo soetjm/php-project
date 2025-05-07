@@ -23,7 +23,7 @@
             <br>
             <br>
             <a href="signup.php" style="display: block;text-align:center;">
-                Dont have an account?? signup
+                Dont have an account? signup
             </a>
         </form>
 
